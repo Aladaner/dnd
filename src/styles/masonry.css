@@ -1,0 +1,22 @@
+.my-masonry-grid {
+	display: flex;
+	margin-left: -16px;
+	width: auto;
+}
+.my-masonry-grid_column {
+	padding-left: 16px;
+	background-clip: padding-box;
+}
+.masonry-card {
+	background: #080d21;
+	border-radius: 12px;
+	padding: 1rem;
+	margin-bottom: 16px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.visibility-icon {
+	width: 32px;
+	height: 32px;
+	float: right;
+	margin-left: 8px;
+}
