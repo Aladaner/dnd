@@ -22,12 +22,11 @@ type Entry = {
 };
 
 type Props = {
-	title: string;
 	data: Entry[];
 	dataType: 'abilities' | 'skills' | 'drawbacks';
 };
 
-const CardList = ({ title, data, dataType }: Props) => {
+const CardList = ({ data, dataType }: Props) => {
 	if (!data.length) return null;
 
 	/* Настройка сетки */
@@ -39,11 +38,6 @@ const CardList = ({ title, data, dataType }: Props) => {
 
 	return (
 		<div>
-			<summary
-				style={{ fontWeight: 'bold', cursor: 'pointer', marginTop: '1rem' }}
-			>
-				{title} ({data.length})
-			</summary>
 			<Masonry
 				breakpointCols={breakpointCOlumnsObj}
 				className="my-masonry-grid"

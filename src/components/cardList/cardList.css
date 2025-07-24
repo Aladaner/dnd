@@ -8,6 +8,7 @@
 	font-size: 14px;
 	border-radius: 6px;
 	margin-bottom: 10px;
+	opacity: 0.93;
 }
 
 .header {
@@ -77,6 +78,7 @@
 
 .description {
 	margin-top: 10px;
+	color: #fff;
 }
 
 .description p {
