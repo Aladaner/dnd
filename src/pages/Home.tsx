@@ -62,26 +62,10 @@ const Supers = () => {
 
 	return (
 		<div className="container">
-			{/* <div className="buttons">
-				<button onClick={() => setSelectedType('abilities')} className="button">
-					Способности <span>({item.supers_data.abilities.length})</span>
-				</button>
-				<button onClick={() => setSelectedType('skills')} className="button">
-					Навыки <span>({item.supers_data.skills.length})</span>
-				</button>
-				<button onClick={() => setSelectedType('drawbacks')} className="button">
-					Недостатки <span>({item.supers_data.drawbacks.length})</span>
-				</button>
-				<button
-					onClick={() => setSelectedType(null)}
-					className="button hideButton"
-				>
-					Скрыть
-				</button>
-			</div> */}
 			<Navigation
 				selectedType={selectedType}
 				setSelectedType={setSelectedType}
+				superData={item.supers_data}
 			/>
 
 			<div className="content">

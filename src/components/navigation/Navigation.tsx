@@ -6,11 +6,17 @@ type NavigationProps = {
 	setSelectedType: React.Dispatch<
 		React.SetStateAction<'abilities' | 'skills' | 'drawbacks' | null>
 	>;
+	superData: {
+		abilities: unknown[];
+		skills: unknown[];
+		drawbacks: unknown[];
+	};
 };
 
 const Navigation: React.FC<NavigationProps> = ({
 	selectedType,
 	setSelectedType,
+	superData,
 }) => {
 	// Общая функция для клика по кнопке
 	const onClickHandler = (
@@ -26,21 +32,21 @@ const Navigation: React.FC<NavigationProps> = ({
 				onClick={() => onClickHandler('abilities')}
 				aria-pressed={selectedType === 'abilities'}
 			>
-				Способности
+				Способности <span>({superData.abilities.length})</span>
 			</button>
 			<button
 				className="button"
 				onClick={() => onClickHandler('skills')}
 				aria-pressed={selectedType === 'skills'}
 			>
-				Навыки
+				Навыки<span>({superData.abilities.length})</span>
 			</button>
 			<button
 				className="button"
 				onClick={() => onClickHandler('drawbacks')}
 				aria-pressed={selectedType === 'drawbacks'}
 			>
-				Недостатки
+				Недостатки<span>({superData.abilities.length})</span>
 			</button>
 			<button
 				className="button"
