@@ -39,14 +39,14 @@ const Navigation: React.FC<NavigationProps> = ({
 				onClick={() => onClickHandler('skills')}
 				aria-pressed={selectedType === 'skills'}
 			>
-				Навыки<span>({superData.abilities.length})</span>
+				Навыки<span>({superData.skills.length})</span>
 			</button>
 			<button
 				className="button"
 				onClick={() => onClickHandler('drawbacks')}
 				aria-pressed={selectedType === 'drawbacks'}
 			>
-				Недостатки<span>({superData.abilities.length})</span>
+				Недостатки<span>({superData.drawbacks.length})</span>
 			</button>
 			<button
 				className="button"
